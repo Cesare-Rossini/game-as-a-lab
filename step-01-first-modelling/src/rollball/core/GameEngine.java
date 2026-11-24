@@ -14,6 +14,7 @@ public class GameEngine {
 	public GameEngine(){
 	}
 	
+	//Coordinate LOGICHE, non pixel
 	public void setup(){
 		world = new World();
 		world.setBall(new Ball(new P2d(-1,-1), new V2d(1,1)));
