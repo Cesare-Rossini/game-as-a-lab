@@ -103,6 +103,11 @@ public class Scene  {
 
 		}
 
+		/* Il KeyListener si mette nella Scene (ovvero il View di MVC)
+		 * anche se sembra contro-intuitivo, però ha senso:
+		 * l'utente non interagisce direttamente con il Controller o con il Model,
+		 * ma solo con la View che a sua volta notifica il Controller.		
+		 */
 		@Override
 		public void keyPressed(KeyEvent e) {
 			if (e.getKeyCode() == 38){

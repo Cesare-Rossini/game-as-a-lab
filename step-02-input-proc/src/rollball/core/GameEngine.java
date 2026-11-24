@@ -52,6 +52,7 @@ public class GameEngine implements Controller {
 		}
 	}
 	
+	//Consumatore nel pattern produttore-consumatore
 	protected void processInput(){
 		Command cmd = cmdQueue.poll();
 		if (cmd != null){
