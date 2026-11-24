@@ -56,6 +56,7 @@ public class GameEngine implements Controller, WorldEventListener {
 		}
 	}
 	
+	//Ogni volta che si fa un update, si controlla la differenza dallo status precedente e si controlla quali eventi siano accaduti
 	protected void updateGame(long elapsed){
 		gameState.update(elapsed);		
 		checkEvents();
